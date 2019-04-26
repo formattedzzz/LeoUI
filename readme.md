@@ -3,21 +3,23 @@
 ## Install
 
 ```bash
-npm i -S leoui
+npm i -S @leooo/leoui
 ```
 
 ## Usage
 
 ```js
 import Vue from 'vue'
-import LeoUI from 'leoui'
-import 'leoui/dist/leoui.min.css'
+import LeoUI from '@leooo/leoui'
+import '@leooo/leoui/dist/leoui.min.css'
 Vue.use(LeoUI)
 
 new Vue({
   //...
 })
 ```
+
+## 文档 还没写....
 
 ## Contributing
 

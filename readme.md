@@ -1,9 +1,6 @@
 # LeoUI
 
-![](https://img.shields.io/bundlephobia/min/@leooo/leoui.svg)
-![](https://img.shields.io/npm/v/@leooo/leoui.svg)
-![](https://img.shields.io/date/1556280634.svg)
-![](https://img.shields.io/apm/l/@leooo/leoui.svg)
+[![](https://img.shields.io/bundlephobia/min/@leooo/leoui.svg)](https://www.npmjs.org/package/@leooo/leoui) [![](https://img.shields.io/npm/v/@leooo/leoui.svg)](https://www.npmjs.com/package/@leooo/leoui) ![](https://img.shields.io/date/1556280634.svg) [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?style=flat)](LICENSE)
 
 ## Install
 
@@ -24,9 +21,11 @@ new Vue({
 })
 ```
 
-## document
+## Document
 
-comming soon...
+```js
+//comming soon...
+```
 
 ## Development
 
@@ -39,6 +38,8 @@ npm install
 npm run build
 # build leoui demo
 npm run dev
+# test leoui demo
+npm run test
 ```
 
 ## Contributing

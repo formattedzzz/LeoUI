@@ -1,6 +1,6 @@
 {
   "name": "@leooo/leoui",
-  "version": "0.0.1",
+  "version": "0.0.1-rc",
   "description": "a small UI for vue framework",
   "main": "/dist/leoui.umd.js",
   "scripts": {

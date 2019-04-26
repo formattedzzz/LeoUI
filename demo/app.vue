@@ -13,7 +13,8 @@ export default {
     return {
       info: {
         name: 'leooop haha',
-        age: 23
+        age: 23,
+        aa: 'leee'
       }
     }
   },

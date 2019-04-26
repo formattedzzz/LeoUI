@@ -25,7 +25,7 @@ module.exports = merge(baseConfig, {
     contentBase: resolve('dist'),
     port: 7009,
     historyApiFallback: true,
-    setup (app) {
+    before (app) {
       console.log('your demo app is runing here http://localhost:7009')
       app.get('/some', function (req, res) {
         res.json({

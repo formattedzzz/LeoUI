@@ -29,7 +29,6 @@ module.exports = {
         enforce: 'pre',
         test: /\.(js|vue)$/,
         loader: 'eslint-loader',
-        exclude: /node_modules/,
         include: [resolve('src'), resolve('demo')]
       },
       {
@@ -37,6 +36,7 @@ module.exports = {
         use: [{
           loader: 'vue-loader',
           options: {
+            
             loaders: {
               stylus: [isdev ? 'vue-style-loader' : MiniCssExtractPlugin.loader, 'css-loader', 'stylus-loader']
             }

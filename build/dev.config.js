@@ -3,6 +3,7 @@ process.env.NODE_ENV = 'development'
 const path = require('path')
 const webpack = require('webpack')
 const merge = require('webpack-merge')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 let baseConfig = require('./base.config.js')
 // const MiniCssExtractPlugin = require("mini-css-extract-plugin")
@@ -46,6 +47,14 @@ module.exports = merge(baseConfig, {
       template: 'index.html',
       inject: true
     }),
+    new CopyWebpackPlugin([
+      /** @打包一个库肯定是不会用到这个的先写上 */
+      {
+        from: resolve('static'),
+        to: resolve('dist/static'),
+        ignore: ['.*']
+      }
+    ]),
     new webpack.NoEmitOnErrorsPlugin(),
 
     new webpack.NamedModulesPlugin(),
